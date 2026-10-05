@@ -1,10 +1,6 @@
 <div align="center">
-
-
-| |   () |   \ \        / / _ __ | |/ /_ _ __ _ __   | |
-|  | \ \ / / | | | |  \ \  /\  / /| | ' | ' // _ \ '| ' \ / _ \ |
-| |___ \ V /| | | | |   \ V  V / | | | | | | . \  / |  | | | |  / |
-|| _/ ||| ||    _/_/  |||| |||__||  || |_|__|_|
+  <img src="assets/banner.svg" width="100%" alt="EvilTwin Kernel Banner" />
+</div>
 
 ### **EVILTWIN KERNEL // SM8635**
 *Offensive Security & Low-Level Wireless Auditing Engine for Xiaomi POCO F6 / Redmi Turbo 3 (`peridot`)*
