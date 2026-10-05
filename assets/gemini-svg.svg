@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 514" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070a"/>
+      <stop offset="50%" stop-color="#0a0f18"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </linearGradient>
+
+    <!-- Neon Green Glow Filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Red Circuit Glow -->
+    <filter id="red-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .terminal-code { font-family: monospace; font-size: 11px; fill: #00ff66; opacity: 0.15; }
+    .trace { stroke: #ff003c; stroke-width: 1.5; fill: none; opacity: 0.7; filter: url(#red-glow); }
+    .node { fill: #ff003c; filter: url(#red-glow); }
+    .title { font-family: 'Courier New', Courier, monospace; font-weight: 900; font-size: 76px; letter-spacing: 14px; fill: #00ff66; filter: url(#neon-glow); }
+    .subtitle { font-family: monospace; font-size: 14px; letter-spacing: 6px; fill: #5af78e; opacity: 0.85; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="514" fill="url(#bg)"/>
+
+  <!-- Matrix / Terminal Rain Backdrop -->
+  <g class="terminal-code">
+    <text x="30" y="40">0x7F 45 4C 46 02 01 01 00</text>
+    <text x="30" y="65">SYS_CALL: hook_wlan_rx</text>
+    <text x="30" y="90">[TRACE] sm8635_qcacld_init</text>
+    <text x="30" y="115">con_mode: 0x0004 [RAW_RX_TX]</text>
+    <text x="30" y="140">frame_ctl: 0x00A0 [DISASSOC]</text>
+    <text x="30" y="165">KMI_CHECK: BYPASS_CRC_OK</text>
+    <text x="30" y="190">susfs_bind: v2.3.0_active</text>
+
+    <text x="1000" y="40">01000101 01010110</text>
+    <text x="1000" y="65">01001001 01001100</text>
+    <text x="1000" y="90">bpf_probe_read_user()</text>
+    <text x="1000" y="115">SEC_AUDIT: PRIV_ELEVATED</text>
+    <text x="1000" y="140">PHY80211: IFACE_MONITOR</text>
+    <text x="1000" y="165">KSU_VERSION: ~40800</text>
+    <text x="1000" y="190">SYS_RESET: SUPPRESSED</text>
+  </g>
+
+  <!-- Server Rack / Silhouettes -->
+  <g opacity="0.25">
+    <rect x="180" y="60" width="12" height="394" fill="#00e5ff"/>
+    <rect x="200" y="80" width="4" height="20" fill="#ff003c"/>
+    <rect x="200" y="110" width="4" height="20" fill="#00ff66"/>
+    <rect x="200" y="140" width="4" height="20" fill="#00ff66"/>
+    <rect x="990" y="60" width="12" height="394" fill="#00e5ff"/>
+    <rect x="980" y="80" width="4" height="20" fill="#ff003c"/>
+    <rect x="980" y="110" width="4" height="20" fill="#00ff66"/>
+  </g>
+
+  <!-- Red Circuit Board Traces -->
+  <g>
+    <!-- Left Circuit -->
+    <path class="trace" d="M 0 257 L 220 257 L 270 207 L 380 207"/>
+    <circle cx="380" cy="207" r="4" class="node"/>
+    <path class="trace" d="M 120 514 L 180 454 L 320 454 L 360 414 L 400 414"/>
+    <circle cx="400" cy="414" r="3" class="node"/>
+
+    <!-- Right Circuit -->
+    <path class="trace" d="M 1200 257 L 980 257 L 930 307 L 820 307"/>
+    <circle cx="820" cy="307" r="4" class="node"/>
+    <path class="trace" d="M 1080 0 L 1020 60 L 880 60 L 840 100 L 800 100"/>
+    <circle cx="800" cy="100" r="3" class="node"/>
+  </g>
+
+  <!-- Center Text -->
+  <g text-anchor="middle">
+    <!-- Main Neon Title -->
+    <text x="600" y="275" class="title">EVILTWIN</text>
+    <!-- Subtitle / Meta -->
+    <text x="600" y="325" class="subtitle">// SM8635 ADVANCED KERNEL ENGINE //</text>
+  </g>
+
+  <!-- Outer Tech Border -->
+  <rect x="15" y="15" width="1170" height="484" fill="none" stroke="#00ff66" stroke-width="1" opacity="0.3"/>
+  <line x1="15" y1="35" x2="35" y2="15" stroke="#ff003c" stroke-width="2"/>
+  <line x1="1185" y1="479" x2="1165" y2="499" stroke="#ff003c" stroke-width="2"/>
+</svg>
