@@ -5,9 +5,9 @@
 ### **EVILTWIN KERNEL // SM8635**
 *Offensive Security & Low-Level Wireless Auditing Engine for Xiaomi POCO F6 / Redmi Turbo 3 (`peridot`)*
 
-[![Release](https://img.shields.io/github/v/release/Raju-yeager/kernel_xiaomi_sm8635?color=00ff66&label=RELEASE&style=for-the-badge&logo=git&logoColor=black)](https://github.com/Raju-yeager//kernel_xiaomi_sm8635/releases)
+[![Release](https://img.shields.io/github/v/release/Raju-yeager/EvilTwin_kernel_xiaomi_sm8635?color=00ff66&label=RELEASE&style=for-the-badge&logo=git&logoColor=black)](https://github.com/Raju-yeager/EvilTwin_kernel_xiaomi_sm8635/releases)
 [![GKI Version](https://img.shields.io/badge/GKI-6.1.176-black?color=00ff66&style=for-the-badge&logo=linux&logoColor=00ff66)](https://kernel.org)
-[![Downloads](https://img.shields.io/github/downloads/Raju-yeager/kernel_xiaomi_sm8635/total?color=00e5ff&label=DOWNLOADS&style=for-the-badge&logo=cloud-download)](https://github.com/Raju-yeager//kernel_xiaomi_sm8635/releases)
+[![Release](https://img.shields.io/github/v/release/Raju-yeager/EvilTwin_kernel_xiaomi_sm8635?color=00ff66&label=RELEASE&style=for-the-badge&logo=git&logoColor=black)](https://github.com/Raju-yeager/EvilTwin_kernel_xiaomi_sm8635/releases)
 [![SUSFS](https://img.shields.io/badge/SUSFS-v2.3.0-purple?style=for-the-badge&logo=shield)](https://gitlab.com/simonpunk/susfs4ksu)
 [![License](https://img.shields.io/badge/LICENSE-GPL--2.0-red?style=for-the-badge)](LICENSE)
 [![KMI](https://img.shields.io/badge/KMI-CRC%20GATED%20IN%20CI-blue?style=for-the-badge)]()
