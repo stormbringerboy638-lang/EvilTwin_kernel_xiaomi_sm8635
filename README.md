@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
   <img src="assets/gemini-svg.svg" width="100%" alt="EvilTwin Kernel Banner" />
 </div>
