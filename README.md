@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" width="100%" alt="EvilTwin Kernel Banner" />
+  <img src="assets/gemini-svg.svg" width="100%" alt="EvilTwin Kernel Banner" />
 </div>
 
 ### **EVILTWIN KERNEL // SM8635**
